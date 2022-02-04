@@ -14,37 +14,47 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-WQ-ZfR">
-                    <rect key="frame" x="16" y="40" width="170" height="170"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD2-fe-Pp4">
-                    <rect key="frame" x="202" y="40" width="196" height="46"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" id="Sfg-Jb-Ub5">
+                    <rect key="frame" x="16" y="40" width="382" height="170"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemGray6Color"/>
-                    <color key="tintColor" systemColor="systemGray6Color"/>
-                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                    <color key="textColor" systemColor="systemIndigoColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-ZQ-1vX">
-                    <rect key="frame" x="202" y="164" width="196" height="46"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemRedColor"/>
-                    <color key="tintColor" systemColor="systemGray6Color"/>
-                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
-                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoP-KL-Eo9">
-                    <rect key="frame" x="202" y="102" width="196" height="46"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBlueColor"/>
-                    <color key="tintColor" systemColor="systemGray6Color"/>
-                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" image="foto" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-WQ-ZfR">
+                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="170" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g5Y-cj-TxA">
+                            <rect key="frame" x="186" y="0.0" width="196" height="170"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="46" text="   Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="196" id="UD2-fe-Pp4">
+                                    <rect key="frame" x="0.0" y="0.0" width="196" height="46"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                    <color key="textColor" systemColor="systemIndigoColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="46" text="   Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aoP-KL-Eo9">
+                                    <rect key="frame" x="0.0" y="62" width="196" height="46"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="178" placeholderIntrinsicHeight="46" text="   Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="152" id="CtK-ZQ-1vX">
+                                    <rect key="frame" x="0.0" y="124" width="196" height="46"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-Ym-zTs">
                     <rect key="frame" x="16" y="250" width="382" height="415"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -68,7 +78,7 @@
         </view>
     </objects>
     <resources>
-        <image name="1" width="1024" height="768"/>
+        <image name="foto" width="599" height="599"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

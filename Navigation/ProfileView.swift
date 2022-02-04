@@ -19,4 +19,5 @@ class ProfileView: UIView {
     // место для подписи
     @IBOutlet weak var placeForSignature: UITextView!
 
+   
 }
