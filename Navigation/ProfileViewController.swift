@@ -8,22 +8,14 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Передаем экран ProfileView на экран Profile
+        let allViewsInXibArray = Bundle.main.loadNibNamed("ProfileView", owner: self, options: nil)
+        let profileView = allViewsInXibArray?.first as! ProfileView
+        profileView.frame = self.view.bounds
+        self.view.addSubview(profileView)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
