@@ -14,45 +14,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" id="Sfg-Jb-Ub5">
-                    <rect key="frame" x="16" y="692" width="382" height="170"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" image="foto" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-WQ-ZfR">
-                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
-                        </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="170" axis="vertical" spacing="16" id="g5Y-cj-TxA">
-                            <rect key="frame" x="186" y="0.0" width="196" height="170"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="46" text="   Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="196" translatesAutoresizingMaskIntoConstraints="NO" id="UD2-fe-Pp4">
-                                    <rect key="frame" x="0.0" y="0.0" width="196" height="46"/>
-                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                    <color key="tintColor" systemColor="systemGray6Color"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                    <color key="textColor" systemColor="systemIndigoColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="46" text="   Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoP-KL-Eo9">
-                                    <rect key="frame" x="0.0" y="62" width="196" height="46"/>
-                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                    <color key="tintColor" systemColor="systemGray6Color"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="178" placeholderIntrinsicHeight="46" text="   Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="152" translatesAutoresizingMaskIntoConstraints="NO" id="T65-T1-NVH">
-                                    <rect key="frame" x="0.0" y="124" width="196" height="46"/>
-                                    <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    <color key="tintColor" systemColor="systemGray6Color"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
-                                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                </stackView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-Ym-zTs">
                     <rect key="frame" x="16" y="250" width="382" height="201"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -93,25 +54,13 @@
                     <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-Jg-Tmh">
-                    <rect key="frame" x="16" y="592" width="382" height="84"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <string key="text">Нижний блок выполнен с приминением Stack View. Что получилось: Красиво оформить и соблюсти расстояния. Что не получилось: Настроить поворот экрана - вся красоты преврашияется в ужас.</string>
-                    <color key="textColor" systemColor="labelColor"/>
-                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="birthdayInformation" destination="aoP-KL-Eo9" id="EMJ-Tj-Kd8"/>
                 <outlet property="locationInformation" destination="CtK-ZQ-1vX" id="kMb-PP-YD4"/>
                 <outlet property="placeForSignature" destination="xDz-Ym-zTs" id="Dxc-eb-Ytr"/>
-                <outlet property="userName" destination="UD2-fe-Pp4" id="lFX-9V-cFj"/>
-                <outlet property="userPhoto" destination="qEV-WQ-ZfR" id="p5c-sN-kfQ"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
         </view>
