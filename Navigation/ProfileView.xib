@@ -14,55 +14,86 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="962-1N-9kw">
+                    <rect key="frame" x="16" y="26" width="382" height="170"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zxJ-ML-OSM">
+                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" image="foto" translatesAutoresizingMaskIntoConstraints="NO" id="oFS-5l-8JX">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="170" id="QsH-cK-bMm"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4dd-H6-k5X">
+                            <rect key="frame" x="186" y="0.0" width="196" height="170"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="46" text="   Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="196" translatesAutoresizingMaskIntoConstraints="NO" id="Hf4-xV-b2l">
+                                    <rect key="frame" x="0.0" y="0.0" width="196" height="46"/>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="wgs-1s-vSd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                    <color key="textColor" systemColor="systemIndigoColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="46" text="   Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aba-RM-966">
+                                    <rect key="frame" x="0.0" y="62" width="196" height="46"/>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="dTY-xg-7eH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="178" placeholderIntrinsicHeight="46" text="   Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="152" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-ZQ-1vX">
+                                    <rect key="frame" x="0.0" y="124" width="196" height="46"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="pDD-Xg-ZFT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="JFN-CE-jJ9"/>
+                    </constraints>
+                </stackView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-Ym-zTs">
-                    <rect key="frame" x="16" y="250" width="382" height="201"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="16" y="236" width="382" height="201"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" image="foto" translatesAutoresizingMaskIntoConstraints="NO" id="oFS-5l-8JX">
-                    <rect key="frame" x="16" y="40" width="170" height="170"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="46" text="   Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="196" translatesAutoresizingMaskIntoConstraints="NO" id="Hf4-xV-b2l">
-                    <rect key="frame" x="202" y="40" width="196" height="46"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemGray6Color"/>
-                    <color key="tintColor" systemColor="systemGray6Color"/>
-                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                    <color key="textColor" systemColor="systemIndigoColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="196" placeholderIntrinsicHeight="46" text="   Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aba-RM-966">
-                    <rect key="frame" x="202" y="102" width="196" height="46"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBlueColor"/>
-                    <color key="tintColor" systemColor="systemGray6Color"/>
-                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="178" placeholderIntrinsicHeight="46" text="   Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="152" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-ZQ-1vX">
-                    <rect key="frame" x="202" y="164" width="196" height="46"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemRedColor"/>
-                    <color key="tintColor" systemColor="systemGray6Color"/>
-                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
-                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="962-1N-9kw" secondAttribute="trailing" constant="16" id="MwW-fT-hC3"/>
+                <constraint firstItem="962-1N-9kw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Nvc-71-J3F"/>
+                <constraint firstItem="962-1N-9kw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="26" id="euD-b8-kqt"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="locationInformation" destination="CtK-ZQ-1vX" id="kMb-PP-YD4"/>
                 <outlet property="placeForSignature" destination="xDz-Ym-zTs" id="Dxc-eb-Ytr"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
+            <point key="canvasLocation" x="131.25" y="81.159420289855078"/>
         </view>
     </objects>
     <resources>
