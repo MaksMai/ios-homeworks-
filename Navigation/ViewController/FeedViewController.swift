@@ -25,8 +25,6 @@ class FeedViewController: UIViewController {
         button.setTitleColor(.lightGray, for: .normal)
         // Делаем жирным
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
-        // Добавим иконку
-         button.setImage(UIImage(systemName: "doc.richtext"), for: .normal)
         // Добавляем Action
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         // Отключаем AutoresizingMask
