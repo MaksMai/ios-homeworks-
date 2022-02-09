@@ -7,11 +7,6 @@
 
 import UIKit
 
-// Создаем структуру Post со свойством title: String.
-struct Post {
-    var title: String
-}
-
 class FeedViewController: UIViewController {
     // Создаем объект типа Post в FeedViewController
     var post = Post(title: "Мой пост")
