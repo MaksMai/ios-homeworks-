@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D2474F227B3B0ED001AB2C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2474F127B3B0ED001AB2C1 /* Post.swift */; };
+		6D34C0AB27B56EA100DB4D77 /* TabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34C0AA27B56EA100DB4D77 /* TabBarControllerViewController.swift */; };
 		6D4660A527B2DFF8008C37A3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4660A427B2DFF8008C37A3 /* InfoViewController.swift */; };
 		6D836F4927B252FF00D8A609 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D836F4827B252FF00D8A609 /* FeedViewController.swift */; };
 		6D836F4B27B2537F00D8A609 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D836F4A27B2537F00D8A609 /* ProfileViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		6D2474F127B3B0ED001AB2C1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6D34C0AA27B56EA100DB4D77 /* TabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewController.swift; sourceTree = "<group>"; };
 		6D4660A427B2DFF8008C37A3 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		6D836F4827B252FF00D8A609 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		6D836F4A27B2537F00D8A609 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		6D2474EF27B3B081001AB2C1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6D34C0AA27B56EA100DB4D77 /* TabBarControllerViewController.swift */,
 				6D836F4827B252FF00D8A609 /* FeedViewController.swift */,
 				6D836F4A27B2537F00D8A609 /* ProfileViewController.swift */,
 				6D836F4C27B268E500D8A609 /* PostViewController.swift */,
@@ -176,6 +179,7 @@
 				6DBE95A927AD049F00DE3737 /* SceneDelegate.swift in Sources */,
 				6D4660A527B2DFF8008C37A3 /* InfoViewController.swift in Sources */,
 				6D2474F227B3B0ED001AB2C1 /* Post.swift in Sources */,
+				6D34C0AB27B56EA100DB4D77 /* TabBarControllerViewController.swift in Sources */,
 				6D836F4D27B268E500D8A609 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
